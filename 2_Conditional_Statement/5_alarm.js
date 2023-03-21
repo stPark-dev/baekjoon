@@ -1,5 +1,5 @@
 let fs = require('fs')
-let input = fs.readFileSync(__dirname+'/test.txt').toString().split(' ');
+let input = fs.readFileSync('/dev/stdin').toString().split(' ');
 
 let h = Number(input[0])
 let m = Number(input[1])
