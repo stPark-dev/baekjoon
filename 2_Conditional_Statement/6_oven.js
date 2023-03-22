@@ -5,9 +5,9 @@
 let fs = require('fs');
 let input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
-let time = input[0].split(' ').map(Number)
-let h = time[0]
-let m = time[1]
+let time = input[0].split(' ')
+let h = Number(time[0])
+let m = Number(time[1])
 let cookTime = Number(input[1])
 
 let cookHour = parseInt((h * 60 + m + cookTime) / 60)
